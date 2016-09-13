@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="DEVICE">
+    <EditTextPreference
+        android:editable="false"
+        android:enabled="false"
+        android:key="pref_connected_device_name"/>
+    <Preference
+        android:key="pref_change_device"
+        android:title="Change Device..."/>
+  </PreferenceCategory>
+  <PreferenceCategory android:title="MODE">
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_mode_single"
+        android:title="Single"/>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_mode_multi"
+        android:title="Multi"/>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_mode_multi2"
+        android:title="Multi2"/>
+  </PreferenceCategory>
+</PreferenceScreen>
