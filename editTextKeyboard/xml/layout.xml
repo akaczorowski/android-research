@@ -1,0 +1,23 @@
+<LinearLayout
+        android:id="@+id/printCountEditTextViewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <EditText
+          android:id="@+id/printCountEditText"
+          android:layout_width="100dp"
+          android:layout_height="80dp"
+          android:layout_gravity="center_horizontal"
+          android:gravity="center"
+          android:hint="Insert Count"
+          android:imeActionId="1337"
+          android:imeOptions="actionDone"
+          android:inputType="number"
+          android:lines="1"
+          android:maxLength="2"
+          android:textSize="35sp"
+          />
+
+</LinearLayout>
