@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#538960</color>
+  <color name="colorPrimaryDark">#32564b</color>
+  <color name="colorAccent">#52a64c</color>
+  <color name="windowBackgroundColor">#ede9eb</color>
+  <color name="placeholderUIDividerColor">#720b0b0b</color>
+</resources>

@@ -1,0 +1,43 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowBackground">@color/windowBackgroundColor</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <!-- Base application theme. -->
+  <style name="PlaceholderUiTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowBackground">@color/windowBackgroundColor</item>
+
+    <item name="android:windowTitleSize">?attr/actionBarSize</item>
+    <item name="android:windowTitleStyle">@style/PlaceholderUIWindowTitle</item>
+    <item name="android:windowTitleBackgroundStyle">@style/PlaceholderUIWindowTitleBackground</item>
+    <item name="android:windowNoTitle">false</item>
+
+  </style>
+
+  <!-- Changes the background color of the title bar -->
+  <style name="PlaceholderUIWindowTitleBackground">
+    <item name="android:background">@drawable/placeholder_ui</item>
+  </style>
+
+  <!-- Set the theme for the window title -->
+  <style name="PlaceholderUIWindowTitle">
+    <item name="android:singleLine">true</item>
+    <item name="android:textAppearance">@style/PlaceholderUIWindowTitleText</item>
+  </style>
+
+  <style name="PlaceholderUIWindowTitleText">
+    <item name="android:textColor">@android:color/transparent</item>
+  </style>
+
+</resources>
