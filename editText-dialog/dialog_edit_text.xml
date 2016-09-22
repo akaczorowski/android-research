@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="200dp"
+              android:layout_height="150dp"
+              android:orientation="vertical">
+
+  <EditText
+      android:id="@+id/countEditText"
+      android:layout_width="100dp"
+      android:layout_height="80dp"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:hint="Insert Count"
+      android:imeActionId="1337"
+      android:imeOptions="actionDone"
+      android:inputType="number"
+      android:lines="1"
+      android:maxLength="2"
+      android:textSize="35sp"
+      />
+
+
+</LinearLayout>
