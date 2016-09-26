@@ -1,0 +1,9 @@
+
+#Get application "Displayed time" and "Fully drawn"
+adb logcat | grep "ActivityManager"
+
+#Screen record
+adb shell screenrecord /sdcard/record.mp4
+
+#Screen record with additional informations
+adb shell screenrecord --bugreport /sdcard/record.mp4
