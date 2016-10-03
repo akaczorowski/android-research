@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:animateLayoutChanges="true"
+              android:background="@android:color/transparent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_gravity="center_horizontal"
+      android:padding="15dp"
+      android:text="Friends list"
+      android:textColor="@android:color/holo_blue_bright"
+      android:textSize="25sp"/>
+
+  <FrameLayout
+      android:id="@+id/discoveredPrintersListViewHolder"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:visibility="visible">
+
+    <view
+        android:id="@+id/friendsList"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ViewStub
+        android:id="@+id/emptyListMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout="@layout/empty_persons_list"
+        android:visibility="gone"/>
+  </FrameLayout>
+
+</LinearLayout>
