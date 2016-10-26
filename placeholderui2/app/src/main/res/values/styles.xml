@@ -1,7 +1,6 @@
 <resources>
 
-  <style name="MyTheme.ActionBar.TitleTextStyle" parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title
-  @android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+  <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
     <item name="android:textColor">@color/colorAccent</item>
   </style>
 
