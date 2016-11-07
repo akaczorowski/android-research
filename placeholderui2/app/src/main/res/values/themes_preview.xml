@@ -3,7 +3,7 @@
 
   <style name="PreviewTheme.LaunchTime" parent="android:Theme.Holo.Light.DarkActionBar">
     <item name="android:actionBarSize">?actionBarSize</item>
-    <item name="android:actionBarStyle">@style/PreviewWidget.ActionBar</item>
+    <item name="android:actionBarStyle">@style/PreviewStyle.ActionBar</item>
     <item name="android:windowBackground">@color/windowBackground</item>
     <item name="runtimeTheme">@style/AppTheme</item>
   </style>

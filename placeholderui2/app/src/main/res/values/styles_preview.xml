@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <style name="PreviewWidget.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+  <style name="PreviewStyle.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
     <item name="android:background">@color/colorPrimary</item>
     <item name="android:displayOptions">showTitle</item>
-    <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    <item name="android:titleTextStyle">@style/PreviewStyle.ActionBar.TitleText</item>
+  </style>
+
+  <style name="PreviewStyle.ActionBar.TitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <item name="android:textColor">@color/colorAccent</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/text_size_title_material_toolbar</item>
   </style>
 </resources>
