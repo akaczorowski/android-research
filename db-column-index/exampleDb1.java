@@ -28,3 +28,14 @@ public enum Column {
     return String.format("%s %s", name(), type().name());
   }
 }
+
+
+/**
+*
+* Use case
+*
+**/
+
+db.execSQL(String.format("CREATE TABLE %s (%s)", TABLE_1, Strings.join(", ", Column.values()))); // values() używa toString()
+db.execSQL(String.format("CREATE INDEX id ON %s (%s)", TABLE_1, Column.ID.name()));
+db.execSQL(String.format("CREATE INDEX code ON %s (%s)", TABLE_1, Column.CODE.name()));
