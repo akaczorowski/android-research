@@ -70,7 +70,7 @@ public class PersonsListFragment extends Fragment
 
   @Override
   public boolean onItemLongClicked(RecyclerView recyclerView, int position, View v) {
-    // it importan to get this callback and return false, then selector list items will work (pressed, clicked etc.)
+    // it importan to get this callback and return false, then list items selector (pressed, clicked etc.) will work
     return false;
   }
 
