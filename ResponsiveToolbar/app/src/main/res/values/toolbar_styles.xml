@@ -5,30 +5,30 @@
     <item name="maxButtonHeight">48dp</item>
     <item name="android:paddingLeft">@dimen/toolbar_horizontal_padding</item>
     <item name="android:paddingRight">@dimen/toolbar_horizontal_padding</item>
+    <item name="android:background">@color/toolbar_background</item>
     <item name="contentInsetStart">@dimen/first_keyline</item>
-    <item name="background">@color/toolbar_background</item>
   </style>
 
   <style name="Akac.Widget.AppCompat.Toolbar.Button.Navigation" parent="Widget.AppCompat.Toolbar.Button.Navigation">
-    <item name="minWidth">48dp</item>
-    <item name="background">@color/toolbar_navigation_btn_background</item>
+    <item name="android:minWidth">48dp</item>
+    <item name="android:background">@color/toolbar_navigation_btn_background</item>
   </style>
 
   <style name="Akac.Widget.AppCompat.ActionButton.Overflow" parent="Widget.AppCompat.ActionButton.Overflow">
-    <item name="paddingLeft">0dp</item>
-    <item name="paddingRight">0dp</item>
-    <item name="background">@color/toolbar_action_btn_overflow_background</item>
+    <item name="android:paddingLeft">0dp</item>
+    <item name="android:paddingRight">0dp</item>
+    <item name="android:background">@color/toolbar_action_btn_overflow_background</item>
   </style>
   
   <style name="Akac.Widget.AppCompat.ActionButton.CloseMode" parent="Widget.AppCompat.ActionButton.CloseMode">
     <item name="android:layout_marginRight">20dp</item>
-    <item name="background">@color/toolbar_action_btn_close_background</item>
+    <item name="android:background">@color/toolbar_action_btn_close_background</item>
   </style>
   
   <style name="Akac.Widget.AppCompat.ActionMode" parent="Widget.AppCompat.ActionMode">
     <item name="android:paddingLeft">@dimen/toolbar_horizontal_padding</item>
     <item name="android:paddingRight">@dimen/toolbar_horizontal_padding</item>
-    <item name="background">@color/toolbar_action_mode_background</item>
+    <item name="android:background">@color/toolbar_action_mode_background</item>
   </style>
   
 
