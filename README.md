@@ -1,2 +1,2 @@
 # android-research
-Android app development ingredients/artefacts. 
+Android app development ingredients. 
