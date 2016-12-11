@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="toolbar_background">#11e449</color>
+  <color name="toolbar_navigation_btn_background">#11e4af</color>
+  <color name="toolbar_action_btn_overflow_background">#11a1e4</color>
+  <color name="toolbar_action_mode_background">#b60f22</color>
+  <color name="toolbar_action_btn_close_background">#d6600c</color>
+</resources>
