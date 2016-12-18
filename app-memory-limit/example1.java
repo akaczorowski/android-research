@@ -1,5 +1,5 @@
 
- 	//heap size that app SHOULD use to allow other apps and system work efficiently
+    //heap size that app SHOULD use to allow other apps and system work efficiently
     ActivityManager am = (ActivityManager) getSystemService(getApplicationContext().ACTIVITY_SERVICE);
     int appMemInMBytes = am.getMemoryClass();
 
