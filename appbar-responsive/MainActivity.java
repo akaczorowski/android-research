@@ -1,8 +1,8 @@
 package akaczorowski.responsivetoolbar;
 
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         //What to do on back clicked
       }
     });
-  }
 
+  }
 
 
   @Override
