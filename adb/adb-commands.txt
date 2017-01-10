@@ -7,3 +7,13 @@ adb shell screenrecord /sdcard/record.mp4
 
 #Screen record with additional informations
 adb shell screenrecord --bugreport /sdcard/record.mp4
+
+# Stop app
+adb shell am force-stop com.akaczorowski.mobile
+
+#Start app
+adb shell am start -n "com.akaczorowski.mobile/com.akaczorowski.mobile.activity.MainMenu" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -D
+
+#App instalation
+adb push D:\Projects\apk\MobileAPP.apk /data/local/tmp/com.akaczorowski.mobile
+$ adb shell pm install -r "/data/local/tmp/com.akaczorowski.mobile
