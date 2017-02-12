@@ -1,0 +1,33 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="windowActionModeOverlay">true</item>
+
+    <item name="toolbarStyle">@style/toolbarStyle</item>
+
+    <!--windowTitle attributes has no effect here, you use toolbar.
+    setting windowNoTitle to 'true' will cause displaying title area above toolbar - don't do this!-->
+    <!--<item name="windowNoTitle">true</item>-->
+
+  </style>
+
+  <style name="toolbarStyle" parent="Widget.AppCompat.Toolbar">
+    <!--constant size of toolbar (delete if you want to allow toolbar height grow with content size)-->
+    <!--minHeight of toolbar is assured by predefined appcompat style (see parent style)-->
+    <item name="android:layout_height">?attr/actionBarSize</item>
+    <item name="android:background">?attr/colorPrimary</item>
+    <item name="titleTextAppearance">@style/toolbarTitleTextAppearance</item>
+    <item name="subtitleTextAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle</item>
+
+  </style>
+
+  <style name="toolbarTitleTextAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:textColor">?attr/colorAccent</item>
+  </style>
+
+</resources>
