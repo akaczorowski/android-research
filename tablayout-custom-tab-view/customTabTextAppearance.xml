@@ -1,0 +1,3 @@
+<style name="CustomTabTextAppearance" parent="@style/TextAppearance.Design.Tab">
+  <item name="android:textColor">@color/text_color_state_list</item>
+</style>
