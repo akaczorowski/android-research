@@ -17,3 +17,7 @@ adb shell am start -n "com.akaczorowski.mobile/com.akaczorowski.mobile.activity.
 #App instalation
 adb push D:\Projects\apk\MobileAPP.apk /data/local/tmp/com.akaczorowski.mobile
 $ adb shell pm install -r "/data/local/tmp/com.akaczorowski.mobile
+
+
+#Device ABI
+adb shell getprop | grep abi
