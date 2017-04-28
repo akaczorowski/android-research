@@ -1,0 +1,4 @@
+adb shell netcfg | grep wlan0
+
+
+adb shell ifconfig wlan0
