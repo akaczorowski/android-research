@@ -21,3 +21,6 @@ $ adb shell pm install -r "/data/local/tmp/com.akaczorowski.mobile
 
 #Device ABI
 adb shell getprop | grep abi
+
+#Kill app
+adb shell am force-stop pl.akac.app
