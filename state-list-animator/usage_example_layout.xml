@@ -1,0 +1,8 @@
+<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:stateListAnimator="@animator/elevation_animation"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+</android.support.design.widget.AppBarLayout>
