@@ -1,0 +1,21 @@
+android{
+
+	applicationVariants.all { variant ->	
+        variant.outputs.each { output ->
+            def fileName = "AppName"
+            if (variant.buildType.name == "release") {
+                fileName += "-${variant.versionName}.apk"
+            } else {
+                fileName += "-${variant.versionName}-${variant.buildType.name}.apk"
+            }
+            output.outputFile = new File(output.outputFile.parent, fileName)
+
+            //#### other possibilities
+
+            //output.versionCodeOverride=
+            //output.getFilter(OutputFile.ABI)
+            //output.getFilter(OutputFile.Density)
+
+        }
+	}
+}
