@@ -24,3 +24,6 @@ adb shell getprop | grep abi
 
 #Kill app
 adb shell am force-stop pl.akac.app
+
+#Device serial number
+adb get-serialno
