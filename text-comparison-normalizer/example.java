@@ -11,6 +11,7 @@ Use this class for character normalization.
 */
 public final class Normalizer {
 
+// https://nukep.github.io/progblog/2015/02/26/some-gotchas-about-unicode-that-every-programmer-should-know.html
 // https://www.regular-expressions.info/unicode.html
 // http://unicode.org/faq/normalization.html
 
