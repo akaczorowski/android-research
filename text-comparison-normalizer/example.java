@@ -11,6 +11,9 @@ Use this class for character normalization.
 */
 public final class Normalizer {
 
+// https://www.regular-expressions.info/unicode.html
+// http://unicode.org/faq/normalization.html
+
     private static final Pattern PATTERN_DIACRITICS = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
     private static final Pattern PATTERN_NON_LETTER_DIGIT_TO_SPACES = Pattern.compile("[^\\p{L}\\p{Nd}]");
 
