@@ -1,1 +1,1 @@
-gradle -q dependencies your-app-project:dependencies
+./gradlew -q app:dependencies --configuration appDevDebugRuntimeClasspath | less
