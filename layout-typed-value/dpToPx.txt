@@ -1,0 +1,2 @@
+val pixelPerSecond: Float =
+    TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dpPerSecond, resources.displayMetrics)
