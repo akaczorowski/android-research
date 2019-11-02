@@ -1,0 +1,40 @@
+
+https://developer.android.com/studio/test/command-line
+
+    ./gradlew myLibrary:testVariantNameUnitTest
+
+    ./gradlew testVariantNameUnitTest --tests *.sampleTestMethod
+
+     ./gradlew myLibrary:connectedVariantNameAndroidTest
+
+     ./gradlew myLibrary:connectedVariantNameAndroidTest -P android.testInstrumentationRunnerArguments.class=com.example.ExampleTest#testMethod
+        low level:
+            ./gradlew myLibrary:installFlavorNameDebugAndroidTest (must do this to install new code)
+            adb shell am instrument -w -e class <class_name>#method name <test_package>/<runner_class>
+            adb shell pm uninstall com.example.package.core.test (must do this to remove old code)
+
+#example:
+    #junit:
+    ./gradlew testLxDevDebugUnitTest
+    ./gradlew app:testLxDevDebugUnitTest
+    #instrumented:
+    ./gradlew app:connectedLxStageDebugAndroidTest
+    ./gradlew app:connectedLhProdDebugAndroidTest
+
+## instrumented:
+#####
+You need to check which instrumentation packages have been installed on your device:
+    adb shell pm list instrumentation  
+        com.example.package.core.test/androidx.test.runner.AndroidJUnitRunner (can be not installed - module specific)
+        pl.lhsystems.groupapp.lh.test/androidx.test.runner.AndroidJUnitRunner
+if not installed, then:
+    ./gradlew myLibrary:installFlavorNameDebugAndroidTest
+        example: ./gradlew core:installLxDevDebugAndroidTest
+#####
+./gradlew core:connectedLxDevDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.example.package.core.crypto.ExampleTest#uriTest
+    low level:
+        ./gradlew core:installLxDevDebugAndroidTest
+        adb shell am instrument -w -e class com.example.package.core.crypto.ExampleTest#uriTest com.example.package.core.test/androidx.test.runner.AndroidJUnitRunner
+        adb shell pm uninstall com.example.package.core.test
+        all core tests:
+        adb shell am instrument -w -r -e debug false com.example.package.core.test/androidx.test.runner.AndroidJUnitRunne
