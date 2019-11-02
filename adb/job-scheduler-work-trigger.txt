@@ -1,0 +1,12 @@
+https://stackoverflow.com/questions/38880969/what-tools-are-available-to-test-jobscheduler/42133270
+https://stackoverflow.com/questions/38880969/what-tools-are-available-to-test-jobscheduler/42133270#42133270
+
+Identify your task with the:
+    adb shell dumpsys jobscheduler
+    ...
+    JOB #u0a184/1: 4eecf90 pl.example.package/androidx.work.impl.background.systemjob.SystemJobService
+    ...
+
+
+Trigger JOB:
+    adb shell cmd jobscheduler run -f pl.example.package 1 //(job #u0a184/1)
