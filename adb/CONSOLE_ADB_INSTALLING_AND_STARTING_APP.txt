@@ -1,0 +1,7 @@
+$ adb push D:\Projects\LPP\CODE\SVPrinting\app\build\outputs\apk\app-debug.apk /data/local/tmp/lppsa.com.svprinting
+$ adb shell pm install -r "/data/local/tmp/lppsa.com.svprinting"
+	pkg: /data/local/tmp/lppsa.com.svprinting
+Success
+
+
+$ adb shell am start -n "lppsa.com.svprinting/lppsa.com.svprinting.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER

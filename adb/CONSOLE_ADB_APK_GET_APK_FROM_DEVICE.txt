@@ -1,0 +1,10 @@
+$ adb shell pm list packages
+...
+package:org.coursera.android
+package:com.quizup.core
+package:com.airbnb.android
+
+$ adb shell pm path com.airbnb.android
+package:/data/app/com.airbnb.android-1.apk
+
+$ adb pull /data/app/com.airbnb.android-1.apk

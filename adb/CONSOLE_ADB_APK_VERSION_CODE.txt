@@ -1,0 +1,1 @@
+adb shell dumpsys package com.lppsa.mobile.international | grep versionCode
