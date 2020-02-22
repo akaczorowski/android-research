@@ -2,11 +2,17 @@ https://stackoverflow.com/questions/38880969/what-tools-are-available-to-test-jo
 https://stackoverflow.com/questions/38880969/what-tools-are-available-to-test-jobscheduler/42133270#42133270
 
 Identify your task with the:
-    adb shell dumpsys jobscheduler
+    adb shell dumpsys jobscheduler | grep -C5 pl.akac.app.dev
     ...
-    JOB #u0a184/1: 4eecf90 pl.example.package/androidx.work.impl.background.systemjob.SystemJobService
+    JOB #u0a184/1: 4eecf90 pl.akac.app.dev/androidx.work.impl.background.systemjob.SystemJobService
+    ...
+    ### different user here (user=10) probably guest
+    JOB #u10a114/2: 11cf35f pl.akac.app.dev/androidx.work.impl.background.systemjob.SystemJobService
+    u10a114 tag=*job*/pl.akac.app.dev/androidx.work.impl.background.systemjob.SystemJobService
+    Source: uid=u10a114 user=10 pkg=pl.akac.app.dev
     ...
 
 
 Trigger JOB:
-    adb shell cmd jobscheduler run -f pl.example.package 1 //(job #u0a184/1)
+    adb shell cmd jobscheduler run -f pl.akac.app.dev 1 //(job #u0a184/1) standard user (user=0)
+    adb shell cmd jobscheduler run -f --user 10 pl.akac.app.dev 2 // guest user
